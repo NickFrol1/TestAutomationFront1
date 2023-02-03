@@ -20,7 +20,7 @@ public class NavigationTest {
     public void checkNavigation(){
         String tmpLine;
         String resLine ="172.18.0.2";
-        String port = "80";
+        String port = ":80";
         Process proc = null;
         try {
             proc = Runtime.getRuntime().exec("docker inspect 4a | grep IPAddress");
@@ -45,7 +45,7 @@ public class NavigationTest {
 
 
 //        Selenide.open(" https://localhost:8088/index.html");
-        Selenide.open("https://"+resLine+port+":/");
+        Selenide.open("http://"+resLine+port+"/");
 //        Selenide.$(By.linkText("Продажа авто в России")).click();
 
 //        assert Selenide.$(By.cssSelector(".css-hqbmxg")).getText().contains("Продажа автомобилей");
