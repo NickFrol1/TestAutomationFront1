@@ -23,7 +23,7 @@ public class NavigationTest {
         String port = ":80";
         Process proc = null;
         try {
-            proc = Runtime.getRuntime().exec("docker inspect 4a | grep IPAddress");
+            proc = Runtime.getRuntime().exec("docker inspect testtest");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
