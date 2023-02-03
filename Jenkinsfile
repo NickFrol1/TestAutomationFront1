@@ -7,10 +7,10 @@ pipeline {
     stages {
         stage('clone repository') {
             steps {
-                deleteDir()
-                git branch: 'main', credentialsId: 'NickFrol1', url: 'https://github.com/NickFrol1/TestAutomationFront1.git'
+//                 deleteDir()
+//                 git branch: 'main', credentialsId: 'NickFrol1', url: 'https://github.com/NickFrol1/TestAutomationFront1.git'
                 echo "Hello"
-                docker {image 'httpd:2.4'}
+
             }
         }
         stage('run tests') {
