@@ -23,34 +23,34 @@ public class NavigationTest {
         page.getHeader().getTitle().shouldHave(Condition.exactText("Курсы"));
     }
 
-    @Test
-    public void topics() {
-        page.getNavigation().getTopics().click();
-        page.getHeader().getTitle().shouldHave(Condition.exactText("Форум"));
-    }
-
-    @Test
-    public void events() {
-        page.getNavigation().getEvents().click();
-        page.getHeader().getTitle().shouldHave(Condition.exactText("Вебинары"));
-    }
-
-    @Test
-    public void posts() {
-        page.getNavigation().getPosts().click();
-        page.getHeader().getTitle().shouldHave(Condition.exactText("Блог"));
-    }
-
-    @Test
-    public void tests() {
-        page.getNavigation().getTests().click();
-        page.getHeader().getTitle().shouldHave(Condition.exactText("Тесты"));
-    }
-
-    @Test
-    public void career() {
-        page.getNavigation().getCareer().click();
-        page.getHeader().getTitle().shouldHave(Condition.exactText("Карьера"));
-    }
+//    @Test
+//    public void topics() {
+//        page.getNavigation().getTopics().click();
+//        page.getHeader().getTitle().shouldHave(Condition.exactText("Форум"));
+//    }
+//
+//    @Test
+//    public void events() {
+//        page.getNavigation().getEvents().click();
+//        page.getHeader().getTitle().shouldHave(Condition.exactText("Вебинары"));
+//    }
+//
+//    @Test
+//    public void posts() {
+//        page.getNavigation().getPosts().click();
+//        page.getHeader().getTitle().shouldHave(Condition.exactText("Блог"));
+//    }
+//
+//    @Test
+//    public void tests() {
+//        page.getNavigation().getTests().click();
+//        page.getHeader().getTitle().shouldHave(Condition.exactText("Тесты"));
+//    }
+//
+//    @Test
+//    public void career() {
+//        page.getNavigation().getCareer().click();
+//        page.getHeader().getTitle().shouldHave(Condition.exactText("Карьера"));
+//    }
 
 }

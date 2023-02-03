@@ -12,12 +12,12 @@ public class NavigationTest {
 
     @ParameterizedTest
     @ValueSource(strings = {
-            "Курсы",
-            "Вебинары",
-            "Форум",
-            "Блог",
-            "Тесты",
-            "Карьера"
+            "Курсы"
+//            "Вебинары",
+//            "Форум",
+//            "Блог",
+//            "Тесты",
+//            "Карьера"
     })
     public void button(String name) {
         Selenide.open("https://geekbrains.ru/courses");

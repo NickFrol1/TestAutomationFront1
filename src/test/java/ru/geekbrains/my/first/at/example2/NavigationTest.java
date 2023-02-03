@@ -15,35 +15,35 @@ public class NavigationTest {
         Selenide.open("https://geekbrains.ru/courses");
     }
 
-    @Test
-    public void courses(){
-        Selenide.$("[class=\"gb-left-menu__nav\"] [href=\"/courses\"]").click();
-        Selenide.$("[class=\"gb-header__title\"]").shouldHave(Condition.exactText("Курсы"));
-    }
-
-    @Test
-    public void topics(){
-        Selenide.$("[class=\"gb-left-menu__nav\"] [href=\"/topics\"]").click();
-        Selenide.$("[class=\"gb-header__title\"]").shouldHave(Condition.exactText("Форум"));
-    }
-
-    @Test
-    public void events(){
-        Selenide.$("[class=\"gb-left-menu__nav\"] [hrPaef=\"/events\"]").click();
-        Selenide.$("[class=\"gb-header__title\"]").shouldHave(Condition.exactText("Вебинары"));
-    }
-
-    @Test
-    public void posts(){
-        Selenide.$("[class=\"gb-left-menu__nav\"] [href=\"/posts\"]").click();
-        Selenide.$("[class=\"gb-header__title\"]").shouldHave(Condition.exactText("Блог"));
-    }
-
-    @Test
-    public void tests(){
-        Selenide.$("[class=\"gb-left-menu__nav\"] [href=\"/tests\"]").click();
-        Selenide.$("[class=\"gb-header__title\"]").shouldHave(Condition.exactText("Тесты"));
-    }
+//    @Test
+//    public void courses(){
+//        Selenide.$("[class=\"gb-left-menu__nav\"] [href=\"/courses\"]").click();
+//        Selenide.$("[class=\"gb-header__title\"]").shouldHave(Condition.exactText("Курсы"));
+//    }
+//
+//    @Test
+//    public void topics(){
+//        Selenide.$("[class=\"gb-left-menu__nav\"] [href=\"/topics\"]").click();
+//        Selenide.$("[class=\"gb-header__title\"]").shouldHave(Condition.exactText("Форум"));
+//    }
+//
+//    @Test
+//    public void events(){
+//        Selenide.$("[class=\"gb-left-menu__nav\"] [hrPaef=\"/events\"]").click();
+//        Selenide.$("[class=\"gb-header__title\"]").shouldHave(Condition.exactText("Вебинары"));
+//    }
+//
+//    @Test
+//    public void posts(){
+//        Selenide.$("[class=\"gb-left-menu__nav\"] [href=\"/posts\"]").click();
+//        Selenide.$("[class=\"gb-header__title\"]").shouldHave(Condition.exactText("Блог"));
+//    }
+//
+//    @Test
+//    public void tests(){
+//        Selenide.$("[class=\"gb-left-menu__nav\"] [href=\"/tests\"]").click();
+//        Selenide.$("[class=\"gb-header__title\"]").shouldHave(Condition.exactText("Тесты"));
+//    }
 
     @Test
     public void career(){

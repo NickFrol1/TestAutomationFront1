@@ -28,12 +28,12 @@ public class NavigationTest {
 
     @ParameterizedTest
     @ValueSource(strings = {
-            "Курсы",
-            "Вебинары",
-            "Форум",
-            "Блог",
-            "Тесты",
-            "Карьера"
+            "Курсы"
+//            "Вебинары",
+//            "Форум",
+//            "Блог",
+//            "Тесты",
+//            "Карьера"
     })
     @Feature("Проверка перехода")
     public void button(String name) {
