@@ -12,7 +12,7 @@ public class NavigationTest {
 
     @Test
     public void checkNavigation(){
-        Selenide.open("https://localhost:8088");
+        Selenide.open("https://localhost:8088/index.html");
 //        Selenide.$(By.linkText("Продажа авто в России")).click();
 //        assert Selenide.$(By.cssSelector(".css-hqbmxg")).getText().contains("Продажа автомобилей");
 //        Selenide.$("[class=\"gb-left-menu__nav\"] [href=\"/courses\"]").click();
