@@ -14,13 +14,13 @@ public class NavigationTest {
 
     @Test
     public void checkNavigation(){
-//        String tempString;
-//        try {
-//            tempString = Runtime.getRuntime().exec("docker ps").toString();
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-//        System.out.println(tempString);
+        String tempString;
+        try {
+            tempString = Runtime.getRuntime().exec("docker ps").getOutputStream().toString();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println(tempString);
 //        Selenide.open("https://localhost:8088/index.html");
         Selenide.open("https://drom.ru");
         Selenide.$(By.linkText("Продажа авто в России")).click();
