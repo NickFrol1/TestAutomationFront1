@@ -21,7 +21,7 @@ public class NavigationTest {
             throw new RuntimeException(e);
         }
         System.out.println(tempString);
-//        Selenide.open("https://localhost:8088/index.html");
+//        Selenide.open(" https://localhost:8088/index.html");
         Selenide.open("https://drom.ru");
         Selenide.$(By.linkText("Продажа авто в России")).click();
 
