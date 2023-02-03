@@ -7,13 +7,24 @@ import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.openqa.selenium.By;
 
+import java.io.IOException;
+
 @Execution(ExecutionMode.CONCURRENT)
 public class NavigationTest {
 
     @Test
     public void checkNavigation(){
-        Selenide.open("https://localhost:8088/index.html");
-//        Selenide.$(By.linkText("Продажа авто в России")).click();
+        String tempString;
+        try {
+            tempString = Runtime.getRuntime().exec("docker ps").toString();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println(tempString);
+//        Selenide.open("https://localhost:8088/index.html");
+        Selenide.open("https://drom.ru");
+        Selenide.$(By.linkText("Продажа авто в России")).click();
+
 //        assert Selenide.$(By.cssSelector(".css-hqbmxg")).getText().contains("Продажа автомобилей");
 //        Selenide.$("[class=\"gb-left-menu__nav\"] [href=\"/courses\"]").click();
 //        Selenide.$("[class=\"gb-header__title\"]").shouldHave(Condition.exactText("Курсы"));
