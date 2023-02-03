@@ -19,7 +19,7 @@ public class NavigationTest {
     @Test
     public void checkNavigation(){
         String tmpLine;
-        String resLine ="172.18.0.2";
+        String resLine ="172.18.0.220";
         String port = ":80";
         Process proc = null;
         try {
@@ -45,7 +45,7 @@ public class NavigationTest {
 
 
 //        Selenide.open(" https://localhost:8088/index.html");
-        Selenide.open("http://"+resLine+port+"/");
+        Selenide.open("http://"+resLine+port+"/index.html");
 //        Selenide.$(By.linkText("Продажа авто в России")).click();
 
 //        assert Selenide.$(By.cssSelector(".css-hqbmxg")).getText().contains("Продажа автомобилей");
