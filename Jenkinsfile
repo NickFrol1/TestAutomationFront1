@@ -8,7 +8,7 @@ pipeline {
         stage('clone repository') {
             steps {
                 deleteDir()
-                git branch: 'master', credentialsId: 'gitlab_new', url: 'https://github.com/Antonppavlov/my-first-at.git'
+                git branch: 'main', credentialsId: '', url: 'https://github.com/NickFrol1/TestAutomationFront1.git'
             }
         }
         stage('run tests') {
