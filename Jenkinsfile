@@ -10,6 +10,7 @@ pipeline {
                 deleteDir()
                 git branch: 'main', credentialsId: 'NickFrol1', url: 'https://github.com/NickFrol1/TestAutomationFront1.git'
                 echo "Hello"
+                echo docker ps
             }
         }
         stage('run tests') {
