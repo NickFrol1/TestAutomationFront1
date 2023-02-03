@@ -8,7 +8,7 @@ pipeline {
         stage('clone repository') {
             steps {
                 deleteDir()
-                git branch: 'main', credentialsId: '', url: 'https://github.com/NickFrol1/TestAutomationFront1.git'
+                git branch: 'main', credentialsId: 'NickFrol1', url: 'https://github.com/NickFrol1/TestAutomationFront1.git'
             }
         }
         stage('run tests') {
