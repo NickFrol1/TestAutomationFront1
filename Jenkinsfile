@@ -18,6 +18,13 @@ pipeline {
                 sh "mvn test -Dselenide.browser=chrome -Dselenide.remote=http://localhost:4444/wd/hub"
             }
         }
+        stage('stop docker'){
+            steps{
+                sh "docker stop testtest"
+                sh "docker rm testtest"
+                sh "docker rmi httpd:2.4"
+            }
+        }
         stage('generate allure report') {
             steps {
                 allure includeProperties: false, jdk: '', results: [[path: 'target/allure-results']]
