@@ -10,7 +10,7 @@ pipeline {
                 deleteDir()
                 git branch: 'main', credentialsId: 'NickFrol1', url: 'https://github.com/NickFrol1/TestAutomationFront1.git'
                 echo "Hello"
-                docker {
+                agent docker {
                         image 'httpd:2.4'
 //                         args  '-v /tmp:/tmp'
                     }
