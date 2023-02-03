@@ -20,9 +20,9 @@ pipeline {
         }
         stage('stop docker'){
             steps{
-                sh "docker stop testtest"
-                sh "docker rm testtest"
-                sh "docker rmi httpd:2.4"
+//                 sh "docker stop testtest"
+//                 sh "docker rm testtest"
+//                 sh "docker rmi httpd:2.4"
             }
         }
         stage('generate allure report') {
