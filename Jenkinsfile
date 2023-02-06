@@ -1,4 +1,6 @@
- pipeline {
+@Library('nicklib')
+
+pipeline {
      agent any
      tools {
          maven 'maven'
@@ -9,7 +11,7 @@
              steps {
  //                 deleteDir()
  //                 git branch: 'main', credentialsId: 'NickFrol1', url: 'https://github.com/NickFrol1/TestAutomationFront1.git'
-                 echo "Hello"
+                 dockerCmd 'WEWEWEWEW'
                  sh "docker run -dit --name testtest --network selenoid -p 8088:80 -v /var/lib/jenkins/workspace/SecondAt/src/main/resources/:/usr/local/apache2/htdocs/ httpd:2.4"
              }
          }
