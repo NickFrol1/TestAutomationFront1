@@ -46,7 +46,6 @@ public class NavigationTest {
 
 
 //        Selenide.open(" https://localhost:8088/index.html");
-        Configuration.browser = "firefox";
         Selenide.open("http://"+resLine+port+"/index.html");
 //        Selenide.$(By.linkText("Продажа авто в России")).click();
 
