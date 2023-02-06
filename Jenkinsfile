@@ -1,4 +1,3 @@
-
 pipeline {
      agent any
      tools {
@@ -15,7 +14,7 @@ pipeline {
          }
          stage('run tests') {
              steps {
-                 sh "mvn test -Dselenide.browser=chrome -Dselenide.remote=http://localhost:4444/wd/hub"
+                 sh "mvn test -Dselenide.browser=firefox -Dselenide.remote=http://localhost:4444/wd/hub"
              }
          }
          stage('stop docker'){
