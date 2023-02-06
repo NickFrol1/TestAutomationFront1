@@ -34,9 +34,9 @@
 // }
 
 
-@Library('mylibrary@main')
+@Library('mylibrary')
 
-portalBuild{
+portalBuild {
     stage('clone repositort') {
         echo "Hello"
     }
