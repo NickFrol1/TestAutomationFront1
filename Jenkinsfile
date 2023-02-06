@@ -32,7 +32,7 @@
 //         }
 //     }
 // }
-#!groovy
+// #!groovy
 
 @Library('myLibrary@main')
 
