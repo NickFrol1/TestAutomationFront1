@@ -2,6 +2,7 @@ package ru.geekbrains.my.first.at.example1;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.Configuration;
 import com.fasterxml.jackson.core.util.BufferRecycler;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
@@ -45,6 +46,7 @@ public class NavigationTest {
 
 
 //        Selenide.open(" https://localhost:8088/index.html");
+        Configuration.browser = "firefox";
         Selenide.open("http://"+resLine+port+"/index.html");
 //        Selenide.$(By.linkText("Продажа авто в России")).click();
 
