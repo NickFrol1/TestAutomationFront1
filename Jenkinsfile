@@ -1,4 +1,4 @@
-@Library('nicklib')
+@Library('nicklib') _
 
 pipeline {
      agent any
