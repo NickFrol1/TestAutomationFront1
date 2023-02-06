@@ -32,9 +32,9 @@
 //         }
 //     }
 // }
-// #!groovy
 
-@Library('myLibrary@main')
+
+@Library('mylibrary@main')
 
 portalBuild{
     stage('clone repositort') {
