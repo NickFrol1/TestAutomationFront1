@@ -39,4 +39,7 @@ node {
         sh "docker run -dit --name testtest --network selenoid -p 8088:80 -v /var/lib/jenkins/workspace/SecondAt/src/main/resources/:/usr/local/apache2/htdocs/ httpd:2.4"
     }
 
+    stage ('test' {
+        sh "mvn test -Dselenide.browser=firefox -Dselenide.remote=http://localhost:4444/wd/hub"
+    })
 }
