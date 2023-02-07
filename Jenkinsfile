@@ -32,7 +32,11 @@
 //     }
 // }
 node {
-    stage('test') {
+    stage('Hello') {
         echo "Hello"
     }
+    stage('docker') {
+        sh "docker run -dit --name testtest --network selenoid -p 8088:80 -v /var/lib/jenkins/workspace/SecondAt/src/main/resources/:/usr/local/apache2/htdocs/ httpd:2.4"
+    }
+
 }
